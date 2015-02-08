@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewLabelNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelNome" />
+
+   <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLabelNome"
+        android:layout_below="@+id/textViewLabelNome"
+        android:layout_marginTop="10dp"
+        android:text="@string/vazio" />
+
+    <TextView
+        android:id="@+id/textViewLabelSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNome"
+        android:layout_below="@+id/textViewNome"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelSexo" />
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLabelSexo"
+        android:layout_below="@+id/textViewLabelSexo"
+        android:layout_marginTop="10dp"
+        android:text="@string/vazio" />
+
+    <TextView
+        android:id="@+id/textViewLabelIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSexo"
+        android:layout_below="@+id/textViewSexo"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelIdade" />
+
+    <TextView
+        android:id="@+id/textViewIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLabelIdade"
+        android:layout_below="@+id/textViewLabelIdade"
+        android:layout_marginTop="10dp"
+        android:text="@string/vazio" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelNome" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNome"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewNome"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNome"
+        android:layout_below="@+id/editTextNome"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelSexo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSexo"
+        android:layout_below="@+id/textViewSexo"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:id="@+id/radioFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feminino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroupSexo"
+        android:layout_below="@+id/radioGroupSexo"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelIdade" />
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewIdade"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewIdade"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextIdade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:minWidth="64dp"
+        android:text="@string/botaoSalvar" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIdade"
+        android:layout_below="@+id/buttonSalvar"
+        android:layout_marginTop="15dp"
+        android:text="@string/labelStatus" />
+
+</RelativeLayout>

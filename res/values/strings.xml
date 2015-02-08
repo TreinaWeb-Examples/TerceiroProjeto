@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Terceiro Projeto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="labelNome">Nome:</string>
+	<string name="labelSexo">Sexo:</string>
+	<string name="masculino">Masculino</string>
+	<string name="feminino">Feminino</string>
+	<string name="labelIdade">Idade:</string>
+	<string name="botaoSalvar">Salvar</string>
+	<string name="labelStatus">Status:</string>
+	<string name="vazio"></string>
+
+</resources>
